@@ -1,0 +1,46 @@
+h1.title{color:#ea7293;text-align: center;}
+p img{text-align: center;}
+p img.photo1{width: 496px;height: 330px; text-align: left;}
+p img.photo2{width: 496px;height: 330px; text-align: center;}
+p img.photo3{width: 496px;height: 330px; text-align: right;}
+div#introduce{color: #2775b6;}
+h2#Introduction,h2#Album,h3#submit{color: pink;}
+#style1,#style2,#style3,#style4,#style5,#style6,#style7,#style8,#style9{color:#144a74;font-weight: bold;font-style: italic;}
+li:hover{
+			background-color:#144a74;
+			color:#fff;
+			border-radius: 30px;
+		}
+li{
+	height: 25px;
+	margin: 0 10px;
+	line-height: 25px;
+	padding: 0 10px;
+	}
+.size1,.size2{font-size: 17px;}
+.usename{color: #999;border-radius: 3px;}
+.password{size:25px; border-radius: 3px;}
+.submit{color: white; background-color: pink; border-color: pink;border-radius: 10px;}
+h2 span#loading{color: rgb(0,117,255);}
+progress{
+            background-color: #fff; /*bgc 需要被设置，否则背景色无法被显示出来*/          
+        }
+progress::-webkit-progress-bar {/* 表示总长度背景色 */
+	                             background-color: lightsalmon;
+	                           }
+progress::-webkit-progress-value{/* 表示已完成进度背景色 */
+                                 background: lightskyblue;
+                                }
+.guide1{bottom: 200px;}
+.guide2{bottom: 150px;}
+.guide3{bottom: 100px;}
+.guide1,.guide2,.guide3{
+	                     display: block;
+	                     position: fixed;
+	                     right: 50px;
+	                     border: 1px solid black;
+	                     height: 49px;
+	                     width: 220px;
+	                     background-color: #ffc;
+	                     border-color: pink;
+                       }

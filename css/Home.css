@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li,ol {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*div {
+	display: block;
+	margin: 0 auto;
+}*/
+@font-face {
+    font-family: ts;
+    src:url(../font/2sDEZGRQotv9nbn2qSl0TxXVYNwNZjnXli4.ttf);
+}
+@font-face {
+	font-family: she;
+	src:url(../font/汉呈毛体书法字体.ttf); 
+}
+@font-face {
+	font-family: she1;
+	src:url(../font/汉呈王久存行书.ttf);
+}
+@font-face {
+	font-family: she2;
+	src:url(../font/301-CAI978.ttf);
+}
+.nav {
+	width: 100%;
+	height: 100px;
+	background-color: rgba(209,181,142);
+	/*background-image: url(../background1.png);*/
+}
+.logo {
+	width: 80px;
+	height: 80px;
+	background: rgba(150,96,78,0);
+	float: left;
+	margin: 10px 50px 0px 10px;
+	font-family: ts;
+	font-size: 36px;
+	text-align: center;
+	line-height: 80px;
+	color: rgba(150,96,78,1);
+	text-shadow: 1px 1px 2px rgba(101,68,37);
+}
+.nav_nav {
+	width: 800px;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	background: rgba(101,68,37,0);
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+ul>li[class^="list"] {
+	width: 90px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	font-size: 32px;
+	background: rgba(101,68,3,0);
+	margin: 0px 80px 0px 0px;
+	font-family: ts;
+	letter-spacing: 3px;
+}
+.nav_ul li>a {
+	color: rgb(253,247,235);
+}
+ul[class^="list"] {
+	width: 300px;
+	height: auto;
+	float: left;
+	display: none;
+	background: rgba(255,255,255, 0.5);
+	backdrop-filter: blur(2px);
+	border-radius: 4px;
+}
+ul[class^="list"]>li {
+	width: 150px;
+	height: 50px;
+	background-color: rgba(253,247,235,0);
+	float: left;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+ul[class^="list"] li a {
+	color: rgb(101,68,37);
+}
+ul li[class^="list"]:hover ul[class^="list"] {
+    display: block;
+}
+.nav_ul li>a:hover {
+	color: rgba(167,116,93,1);
+}
+.content {
+	background-color: rgb(209,181,142);
+	/*background-image: url(../image/background1.png);*/
+	width: 100%;
+	height: 700px;
+	margin: 0 auto;
+}
+.content_c {
+	background-color: rgba(101,68,37,0);
+	width: 1350px;
+	height: 600px;
+	margin: 0 auto;
+}
+.zuo {
+	width: 280px;
+	height: 600px;
+	float: left;
+	background-color: rgba(101,68,37,0);
+}
+.you {
+	margin-left: 70px;
+	height: 600px;
+	width: 1000px;
+	background-color: rgba(101,68,37,0);
+	padding: 30px 50px;
+	box-sizing: border-box;
+	float: left;
+	background-image: url(../image/1.png);
+	background-repeat: no-repeat;
+	background-position: right bottom; 
+}
+.shang {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/*background-color: rgba(209,181,142,1);
+	background-position: center;
+	background-size: cover;*/
+	box-shadow: 0px 0px 30px 10px rgb(241,243,244,0.5);
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.tayface {
+	transition: all 0.6s;
+	transform-style: preserve-3d;
+}
+.tayface:hover {
+	transform: rotateY(180deg);
+}
+.p1 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgba(209,181,142,1);
+	background-image: url(../image/tay5.jpg);
+	background-position: center;
+	background-size: cover; 
+	position: absolute;
+}
+.p2 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgba(209,181,142,1);
+	background-image: url(../image/tay7.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+.xia {
+	width: 280px;
+	height: 350px;
+	background-color: rgba(101,68,37,0);
+	color: rgb(102,102,102);
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 22px;
+	font-size: 15px;
+}
+div#text {
+	font-size: 30px;
+	font-family: she1;
+	line-height: 53px;
+	word-spacing: 2px;
+	text-overflow: ellipsis;
+	text-shadow: 2px 2px 3px rgba(101,68,37);
+}
+.content1 {
+	background-color: rgb(209,181,142);
+	width: 100%;
+	height: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+.introduce,.album,.others {
+	width: 280px;
+	height: 400px;
+	background-color: rgba(101,68,37,1);
+	margin: 0 50px;
+	border-radius: 1%;
+	box-shadow: 5px 5px 10px 3px rgba(40, 61, 87, 0.5);
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.introduce {
+	background-image: url(../image/tay4.jpg);
+}
+.album {
+	background-image: url(../image/tay2.jpg);
+}
+.others {
+	background-image: url(../image/tay6.jpg);
+}
+.introduce:hover,.album:hover,.others:hover {
+	transform: scale(1.05,1.05);
+}
+#t1,#t2,#t3 {
+	width: 280px;
+	height: 100px;
+	border-radius: 0 0 1% 1%;
+	background-color: rgba(255,255,255,0.5);
+	line-height: 100px;
+	text-align: center;
+	margin-top: 300px;
+	font-size: 22px;
+	font-weight: bold;
+}
+#t1 a,#t2 a,#t3 a {
+	text-decoration: none;
+	color: rgb(40, 61, 87);
+}
+.content2 {
+	background-color: rgb(209,181,142);
+	width: 100%;
+	height: 700px;
+	padding: 60px 150px;
+	box-sizing: border-box;
+	line-height: 35px;
+}
+span[id^="style"] {
+	color:#144a74;font-weight: bold;font-style: italic;
+}
+.content3 {
+	background-color: rgb(209,181,142);
+	width: 100%;
+	height: 700px;
+	padding: 60px 150px;
+	box-sizing: border-box;
+}
+div.content3 img {
+	width: 220px;
+	height: 220px;
+	margin: 20px 20px 0px 0px;
+	border-radius: 6px;
+	transition: all 0.4s;
+}
+div.content3 img:hover {
+	transform: translate(0px,-10px);
+}
+.shelf1 {
+	width: auto;
+	height: 12px;
+	background-color: white;
+	box-shadow: 3px 5px 10px 3px rgba(40, 61, 87, 0.5);
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}

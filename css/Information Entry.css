@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li,ol {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+@font-face {
+    font-family: ts;
+    src:url(../font/2sDEZGRQotv9nbn2qSl0TxXVYNwNZjnXli4.ttf);
+}
+@font-face {
+	font-family: form_p;
+	src:url(../font/301-CAI978.ttf);
+}
+@font-face {
+	font-family: oty;
+	src:url(../font/字魂24号-镇魂手书.ttf);
+}
+@font-face {
+	font-family: wynq;
+	src:url(../font/禹卫书法行书简体.ttf);
+}
+.one {
+	width: 100%;
+	height: 1200px;
+	background-color: rgb(209,181,142);
+	background-image: url(../image/tay4.jpg),url(../image/background1.png);
+	background-repeat: no-repeat;
+	background-position: left bottom,center;
+	background-size: 45%,100%;
+	background-attachment: fixed;
+	position: relative;
+}
+.word {
+	width: 820px;
+	height: 400px;
+	background-color: pink;
+	font-family: oty;
+	font-size: 100px;
+	text-align: center;
+	position: fixed;
+	top: 50px;
+    background-image: -webkit-linear-gradient(bottom, rgba(201, 115, 255, 1), rgba(20, 11, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;/*三行字体渐变*/
+    animation-name: word;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes word {
+	from {
+	}
+	to {
+		font-size: 130px;
+		transform: translate(500px,150px);
+		opacity: 0;
+	}
+}
+.form {
+	width: 600px;
+	height: 860px;
+	position: absolute;
+	right: 10%;
+	top: 5%;
+	background: rgba(255,255,255, 0.5);
+	backdrop-filter: blur(2px);
+	border-radius: 4px;
+	margin: 0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+	animation-name: form;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes form {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.qita {
+	width: 500px;
+	height: 120px;
+	margin: 0 auto;
+}
+.logo {
+	width: 100px;
+	height: 50px;
+	background: rgba(150,96,78,0);
+	font-family: ts;
+	font-size: 36px;
+	color: rgba(150,96,78,1);
+	text-shadow: 1px 1px 2px rgba(101,68,37);
+	margin-bottom: 20px;
+}
+.title {
+	width: 300px;
+	height: 50px;
+	font-family: form_p;
+	/*background-color: green;*/
+}
+.form_content {
+	width: 500px;
+	height: 640px;
+	/*background-color: grey;*/
+	margin: 0 auto;
+}
+form > div {
+	width: 500px;
+	height: 80px;
+	/*background-color: pink;*/
+	color: rgba(40,61,87,1);
+}
+form div div {
+	width: 250px;
+	height: 80px;
+	/*background-color: yellow;*/
+	float: left;
+}
+div p input {
+	width: 500px;
+	height: 28px;
+	border: 1px solid rgba(13,13,13,0);
+	border-bottom: 1px solid grey;
+	background-color: rgba(13,13,13,0);
+	margin-top: 10px;
+}
+form div div input {
+	width: 240px;
+	height: 28px;
+}
+.buttom {
+	width: 500px;
+	height: 80px;
+	text-align: center;
+}
+.buttom input{
+	width: 80px;
+	height: 28px;
+	font-size: 14px;
+	border-radius: 5px;
+	margin: 10px;
+}

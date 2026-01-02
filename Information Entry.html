@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taylor Swift||log in</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Information Entry.css">
+</head>
+<body>
+	<div class="one">
+		<div class="word">
+			only the young<br>
+			<span style="font-size: 60px; font-family: wynq;letter-spacing: 20px;">唯有年轻</span>
+		</div>
+		<div class="form">
+			<div class="qita">
+				<div class="logo"><a href="Home.html">ts</a></div>
+				<div class="title">
+					<h1>Create an account</h1>
+				</div>
+			</div>
+			<div class="form_content">
+				<form action="http://www.taylorswift.com/" method="post" name="account" autocomplete="off">
+					<div class="username">
+						<span>Username</span>
+						<p>
+							<input type="text" name="username" pattern="^[A-Za-z0-9]+$" autofocus required>
+						</p>
+					</div>
+					<div class="password">
+						<span>Password</span>
+						<p>
+							<input type="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,10}$" required>
+						</p>
+					</div>
+					<div class="attention">
+						<ul style="color: rag(99,119,146); font-size: 6px;">
+						Create a password that:
+						<li>★ contains 8-10 characters</li>
+						<li>★ contains both lower (a-z) and upper case letters (A-Z)</li>
+						<li>★ can not use special characters</li>
+					</ul>
+					</div>
+					<div class="age_birthady">
+						<div class="age">
+							<span>Age</span>
+							<p>
+								<input type="number" name="age" min="0" max="120" placeholder="21" required>
+							</p>
+						</div>
+						<div class="birthday">
+							<span>Birthday</span>
+							<p>
+								<input type="date" name="birthday" required>
+							</p>
+						</div>
+						
+					</div>
+					<div class="tel_email">
+						<div class="tel">
+							<span>Tel</span>
+							<p>
+								<input type="tel" name="telephone" pattern="((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" placeholder="13311235257" required>
+							</p>
+						</div>
+						<div class="email">
+							<span>E-mail</span>
+							<p>
+								<input type="email" name="email" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="1234567890@qq.com" required>
+							</p>
+						</div>
+					</div>
+					<div class="ablum">
+						<span>Favorite ablum</span>
+						<p>
+							<input type="text" list="ablum" required>
+							<datalist id="ablum">
+								<option>Taylor Swift</option>
+								<option>Fearless</option>
+								<option>Speak Now</option>
+								<option>Red</option>
+								<option>1989</option>
+								<option>reputatiion</option>
+								<option>Lover</option>
+								<option>folklore</option>
+								<option>evermore</option>
+								<option>Fearless(Taylor's Version)</option>
+							</datalist>
+						</p>
+					</div>
+					<div class="color">
+						<span>Lucky color</span>
+						<p>
+							<input type="color" name="lovecolor" value="#D1B58E" required>
+						</p>
+					</div>
+					<div class="buttom">
+						<input type="submit" name="submit" value="submit">
+						<input type="reset" name="reset" value="reset">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
